@@ -1,0 +1,19 @@
+@import "@/styles/variables";
+
+.LayoutWrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	// background-color: #afffff80;
+	background-color: $dm_layout_bg;
+	color: $dm_base_color;
+}
+
+.contentWrapper {
+	// border: 1px dashed #c0c0c0;
+	// border-style: none dashed;
+	// background-color: #c9c9c9;
+	min-height: 110vh;
+	width: 85%;
+	margin: 2rem auto 0;
+}

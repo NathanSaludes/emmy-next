@@ -1,0 +1,42 @@
+@import "../../styles/variables";
+
+.NavigationItem {
+	min-height: 2rem;
+	width: 110%;
+	display: flex;
+	align-items: center;
+	border-radius: 0.5rem 0 0 0.5rem;
+
+	&:hover {
+		background-color: $accent_blue;
+		cursor: pointer;
+	}
+
+	&.isActive {
+		filter: brightness(1.2);
+		background-color: adjust-color($color: $accent_blue, $lightness: 1);
+	}
+}
+
+.NavigationItemLink {
+	padding: 0.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.Icon {
+	// background-color: red;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.5rem;
+	height: 2.5rem;
+}
+
+.Label {
+	margin-left: 1rem;
+	font-size: 1rem;
+	overflow: hidden;
+	min-width: max-content;
+}
