@@ -14,7 +14,7 @@
 
 	&.isActive {
 		filter: brightness(1.2);
-		background-color: adjust-color($color: $accent_blue, $lightness: 1);
+		background-color: adjust-color($color: $accent_blue, $lightness: 1%);
 	}
 }
 
