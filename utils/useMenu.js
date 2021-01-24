@@ -4,21 +4,13 @@ import { useEffect, useState, useContext, createContext } from 'react';
 const MenuContext = createContext();
 const LG_WIDTH = 1024;
 
-function debounce(func, wait, immediate) {
-	let timeout;
-	return function () {
-		let context = this;
-		let args = arguments;
-
-		let later = function () {
-			timeout = null;
-			if (!immediate) func.apply(context, args);
-		}
-
-		let callNow = immediate && !timeout;
-		clearTimeout(timeout);
-		timeout = setTimeout(later, wait);
-		if (callNow) func.apply(context, args);
+const debounce = (fn, delay) => {
+	let timer;
+	return function (...args) {
+		clearTimeout(timer)
+		timer = setTimeout(() => {
+			fn(...args)
+		}, delay)
 	}
 }
 
@@ -34,7 +26,6 @@ function useMenu() {
 
 	// this function checks if the device width is mobile
 	const handleResize = useCallback(debounce(() => {
-		console.log('Setting isMobile')
 		setIsMobile(window.innerWidth > LG_WIDTH ? false : true);
 	}, 150), [])
 
