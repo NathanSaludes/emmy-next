@@ -21,7 +21,7 @@ const SubmitButton = ({ label }) => (
 )
 
 const Logo = () => (
-	<div className="block md:flex md:justify-center md:w-80 m-auto md:mr-10 object-contain">
+	<div className="block md:flex md:justify-start md:w-72 m-auto md:mr-7 object-contain flex-shrink-0">
 		<img
 			className="h-16 md:h-24 w-auto"
 			src="/images/Emmy.png"
@@ -57,12 +57,12 @@ const Form = () => (
 export default function LoginForm() {
 	return (
 		<>
-			<div className="flex flex-col items-center bg-white shadow-sm px-4 md:px-10 pt-10 pb-4 rounded-xl">
+			<div className="flex flex-col items-center bg-white shadow-sm px-4 md:px-12 pt-14 pb-4 rounded-xl">
 				<div className="flex flex-col items-center justify-center md:flex-row">
 					<Logo />
 					<Form />
 				</div>
-				<p className="text-sm tracking-tight md:text-sm text-gray-400 text-center md:pt-10 mx-3">
+				<p className="text-xs text-gray-400 text-center md:pt-10 mx-3">
 					Don't have an account? Please contact your administrator.
 				</p>
 				
