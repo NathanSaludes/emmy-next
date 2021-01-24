@@ -5,11 +5,11 @@ import { useMenuContext } from '@/utils/useMenu';
 
 export default function LeftNavigation(props) {
 
-	const { open, toggleMenu, isMobile } = useMenuContext();
+	const { isOpen, toggleMenu, isMobile } = useMenuContext();
 
 	const variants = {
 		"mobile": {
-			width: (open ? '14rem' : '0rem'),
+			width: (isOpen ? '14rem' : '0rem'),
 			transition: {
 				type: 'tween',
 				duration: 0.3,
