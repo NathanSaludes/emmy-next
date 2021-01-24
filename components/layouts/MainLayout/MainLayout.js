@@ -9,7 +9,7 @@ export default function Mainlayout({ children }) {
 			<div className={`flex flex-col ${styles.LayoutWrapper} min-h-full`}>
 				<LeftNavigation />
 				<AppBar />
-				<div className={`${styles.contentWrapper} shadow-sm leading-9 min-h-screen w-10/12 mt-24 mx-auto`}>
+				<div className={`shadow-sm leading-9 min-h-screen w-10/12 mt-24 mx-auto`}>
 					{children}
 				</div>
 			</div>
