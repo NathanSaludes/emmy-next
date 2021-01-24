@@ -12,8 +12,8 @@ const UserAvatar = () => {
 }
 
 const Notification = ({ hasUnread }) => (
-	<button className="flex mr-4 focus:outline-none group">
-		<HiBell className={`text-3xl ${hasUnread && 'text-blue-400'} group-hover:text-opacity-80`} />
+	<button className="flex mr-4 group focus:outline-none focus-within:ring-2 focus:bg-blue-400 focus:bg-opacity-20 p-0.5 rounded-md">
+		<HiBell className={`text-3xl`} />
 		{
 			hasUnread && (
 				<>
@@ -42,7 +42,7 @@ export default function AppBar() {
 					>
 						<HiMenu className="text-2xl" />
 					</button>
-					<h2 className="text-lg -mb-1 font-semibold md:font-medium capitalize">
+					<h2 className="text-lg -mb-1 font-semibold capitalize">
 						{title}
 					</h2>
 				</div>
