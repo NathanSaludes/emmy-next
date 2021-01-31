@@ -1,6 +1,27 @@
 import Head from 'next/head'
 import MainLayout from '@/components/layouts/MainLayout'
 import PageHeader from '@/components/PageHeader'
+import { HiPlus, HiSearch } from 'react-icons/hi'
+import UserList from '@/components/UserList'
+
+const AddUserButton = () => (
+	<button className={`text-white bg-emmy-blue text-md text-opacity-90 py-1 md:py-1.5 pr-6 pl-4 rounded-lg flex items-center focus:outline-none focus:ring-2 ring-offset-emmy-blue font-semibold`}>
+		<HiPlus className="text-white text-opacity-50 mr-1" />
+		Add User
+	</button>
+)
+
+const SearchUser = () => (
+	<div className="mb-5 my-8">
+		<div className="bg-dark-denim-accent rounded-md flex items-center relative">
+			<HiSearch className="absolute left-3 text-blue-100 text-opacity-30 text-lg" />
+			<input
+				type="text" name="search_user"
+				placeholder="Search"
+				className={`bg-transparent border-none pr-4 pl-10 py-1 rounded-lg text-white placeholder-blue-100 placeholder-opacity-30 w-full outline-none focus:ring-1`} />
+		</div>
+	</div>
+)
 
 export default function UserAccounts() {
 	return (
@@ -9,10 +30,11 @@ export default function UserAccounts() {
 				<title>User Accounts</title>
 			</Head>
 			<MainLayout>
-				<PageHeader title="User Accounts" />
-				<p>
-					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse mollitia eum modi incidunt ipsa culpa quidem dolorem commodi magni in maxime recusandae nam reprehenderit sunt, harum rem illo consectetur rerum ipsum autem, aspernatur quasi vero nemo quas. Magni eveniet ab officiis neque, architecto perspiciatis nisi molestiae veniam dolorem unde earum ipsam aliquam dignissimos minus deserunt ipsa obcaecati sapiente. Repellat facere maiores autem cumque quod dicta atque enim laborum distinctio, alias quas placeat molestiae rerum, quia, cum veritatis rem architecto. Molestiae, recusandae mollitia libero voluptas incidunt dignissimos facere, praesentium nam porro repudiandae sint quos enim sapiente delectus. Est, aut. Eveniet, et?
-				</p>
+				<PageHeader title="User Accounts">
+					<AddUserButton />
+				</PageHeader>
+				<SearchUser />
+				<UserList />
 			</MainLayout>
 		</>
 	)
