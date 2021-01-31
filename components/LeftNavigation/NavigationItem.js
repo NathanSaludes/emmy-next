@@ -12,7 +12,7 @@ export default function NavigationItem({ link, label, icon }) {
 					<div className="h-8 w-8 flex-shrink-0">
 						<img className="object-contain" src={`/icons/${icon}`} />
 					</div>
-					<span className="ml-6 flex items-center w-full flex-grow-1 text-base pr-2 lg:pr-5 tracking-wide min-w-max">
+					<span className="text-white text-opacity-90 ml-6 flex items-center w-full flex-grow-1 text-base pr-2 lg:pr-5 tracking-wide min-w-max">
 						{label}
 					</span>
 				</a>
