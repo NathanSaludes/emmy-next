@@ -4,8 +4,12 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				'blue-accent': '#567dd8',
-				'appbar': '#213153'
+				'dark-denim': '#121e38',
+				'emmy-blue': '#3b82f6',
+				'emmy-blue-accent': '#5793f5',
+				'dark-denim-accent': '#213153',
+				'main': '#8a9ab9',
+				'primary': '#d2d9e9'
 			}
 		},
 	},
