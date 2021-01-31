@@ -1,18 +1,9 @@
 import { useCallback } from 'react';
 import { useEffect, useState, useContext, createContext } from 'react';
+import debounce from './debounce';
 
 const MenuContext = createContext();
 const LG_WIDTH = 1024;
-
-const debounce = (fn, delay) => {
-	let timer;
-	return function (...args) {
-		clearTimeout(timer)
-		timer = setTimeout(() => {
-			fn(...args)
-		}, delay)
-	}
-}
 
 function useMenu() {
 	const [isOpen, setIsOpen] = useState(false)
@@ -24,7 +15,7 @@ function useMenu() {
 	we are just returning the same identity of the function.
 	----------------------------------------------------------------- */
 
-	// this function checks if the device width is mobile
+	// checks if the device screen width is greater mobile devices (1024px)
 	const handleResize = useCallback(debounce(() => {
 		setIsMobile(window.innerWidth > LG_WIDTH ? false : true);
 	}, 150), [])
