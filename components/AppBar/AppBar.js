@@ -33,8 +33,8 @@ export default function AppBar() {
 	const title = router.route.replace('/', '')
 
 	return (
-		<div className={`fixed z-10 flex items-center justify-center w-full py-3 bg-appbar ${styles.AppBarWrapper}`}>
-			<div className={`flex items-center w-10/12`}>
+		<div className={`fixed z-10 flex items-center justify-center w-full py-3 bg-dark-denim-accent ${styles.AppBarWrapper}`}>
+			<div className={`flex items-center w-10/12 lg:w-8/12`}>
 				<div className={`flex items-center justify-center`}>
 					<button
 						className="lg:hidden p-2 rounded-md mr-2 hover:bg-blue-400 hover:bg-opacity-20 focus:outline-none focus:ring-2"
