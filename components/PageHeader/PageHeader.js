@@ -1,12 +1,14 @@
 import PageHeader from "."
-import styles from './PageHeader.module.scss';
 
-export default function Header({ title }) {
+export default function Header({ title, children }) {
 	return (
-		<div>
-			<h1 className={`font-bold text-3xl mb-4 ${styles.HeaderTitle}`}>
+		<div className={`flex bg-opacity-30 items-end mb-4 justify-between`}>
+			<h1 className={`font-bold text-3xl md:text-4xl text-primary w-1/2`}>
 				{title}
 			</h1>
+			{children && <div className={`flex flex-grow justify-end`}>
+				{children}
+			</div>}
 		</div>
 	)
 }
