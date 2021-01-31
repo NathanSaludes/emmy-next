@@ -12,7 +12,7 @@ const Emotion = ({ value }) => (
 export default function SentimentSelection() {
 	return (
 		<div className="flex flex-col items-center" style={{ textShadow: '3px 1px 5px rgba(0, 38, 255, 0.658)' }}>
-			<h1 className="font-light text-lg mb-2 md:text-2xl">Hi, Fabian Deneski!</h1>
+			<h1 className="font-light text-lg mb-2 md:text-2xl">Hi, Gille!</h1>
 			<h2 className="font-bold text-3xl sm:text-4xl md:text-5xl">How are you feeling today?</h2>
 			<div className="flex items-center justify-evenly mt-4">
 				<Emotion value={1} />
