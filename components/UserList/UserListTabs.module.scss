@@ -1,0 +1,27 @@
+.UserListTabs {
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+	}
+
+	/* Handle on hover */
+	&::-webkit-scrollbar-thumb:hover {
+	}
+
+	// style for creating a fade effect
+	&::before {
+		content: "";
+		position: absolute;
+		right: 0;
+		width: 5rem;
+		height: 100%;
+		background-image: linear-gradient(to right, transparent, #121e38);
+	}
+}

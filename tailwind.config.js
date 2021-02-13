@@ -5,9 +5,10 @@ module.exports = {
 		extend: {
 			colors: {
 				'dark-denim': '#121e38',
+				'dark-denim-accent': '#213153',
+				'dark-denim-faded': '#2d3f61',
 				'emmy-blue': '#3b82f6',
 				'emmy-blue-accent': '#5793f5',
-				'dark-denim-accent': '#213153',
 				'main': '#8a9ab9',
 				'primary': '#d2d9e9'
 			}

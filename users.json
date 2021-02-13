@@ -1,0 +1,50 @@
+[
+	{
+		"id": "8424cb43-2b96-4904-82f9-78107bd01cf8",
+		"name": "Nathaniel Saludes",
+		"username": "NathanSaludes",
+		"email": "nsaludes@iacademy.edu.ph",
+		"isActive": true,
+		"dateCreated": "2021-03-07"
+	},
+	{
+		"id": "0afdee69-2b9f-4b9c-a192-ac3ab649c4d9",
+		"name": "Paolo Latoja",
+		"username": "PaoloLatoja",
+		"email": "platoja@iacademy.edu.ph",
+		"isActive": true,
+		"dateCreated": "2021-03-28"
+	},
+	{
+		"id": "70ffdec8-520f-428e-aae6-919b841c4423",
+		"name": "Michael Ong",
+		"username": "Michaelong",
+		"email": "mong@iacademy.edu.ph",
+		"isActive": true,
+		"dateCreated": "2021-06-20"
+	},
+	{
+		"id": "36532ecc-c201-4428-a3dc-43e354100a96",
+		"name": "Brian Dineros",
+		"username": "BrianDineros",
+		"email": "bdineros@iacademy.edu.ph",
+		"isActive": false,
+		"dateCreated": "2021-06-22"
+	},
+	{
+		"id": "8eeb0de7-961e-4236-8ed3-09a5f7297189",
+		"name": "Hannah Chua",
+		"username": "HannahChua",
+		"email": "hchua@iacademy.edu.ph",
+		"isActive": false,
+		"dateCreated": "2021-12-05"
+	},
+	{
+		"id": "8424cb43-2b96-4904-82f9-78107bd01cf6",
+		"name": "a random person with a very long name. long strings should be truncated.",
+		"username": "RandomPerson",
+		"email": "rperson@iacademy.edu.ph",
+		"isActive": true,
+		"dateCreated": "2021-02-14"
+	}
+]

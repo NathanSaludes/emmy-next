@@ -8,12 +8,12 @@ const RemoveButton = () => (
 )
 
 const EditButton = () => (
-	<button className="bg-gray-600 p-2 rounded-full focus:outline-none focus:ring-2">
+	<button className="bg-dark-denim-faded p-2 rounded-full focus:outline-none focus:ring-2">
 		<MdEdit className="text-xs text-blue-100 text-opacity-70 transform scale-125" />
 	</button>
 )
 
-export default function AccountActions() {
+export default function AccountActions({ id }) {
 	return (
 		<div className="flex">
 			<RemoveButton />

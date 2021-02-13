@@ -1,4 +1,3 @@
-import { UserIcon } from "@/styles/Icons";
 import Link from 'next/link'
 import Image from 'next/image'
 import { HiLockClosed, HiUser } from 'react-icons/hi';
@@ -12,8 +11,8 @@ const ErrorMessage = ({ children }) => (
 )
 
 const SubmitButton = ({ label }) => (
-	<button 
-		className="shadow-sm bg-green-300 text-white w-full px-4 py-3 rounded-lg font-semibold tracking-wider focus:outline-none focus:ring-1 focus:ring-green-400 ring-offset-2 transition-all transform hover:scale-105" 
+	<button
+		className="shadow-sm bg-green-300 text-white w-full px-4 py-3 rounded-lg font-semibold tracking-wider focus:outline-none focus:ring-1 focus:ring-green-400 ring-offset-2 transition-all transform hover:scale-105"
 		type="submit"
 	>
 		{label.toUpperCase()}
@@ -33,13 +32,13 @@ const Logo = () => (
 const Form = () => (
 	<form className="py-10 w-80 flex flex-col items-center">
 		<ErrorMessage>The email or password you provided is invalid.</ErrorMessage>
-		<FormInput 
+		<FormInput
 			label="Email"
 			type="email"
 			name="email"
 			icon={<HiUser />}
 		/>
-		<FormInput 
+		<FormInput
 			label="Password"
 			type="password"
 			name="password"
@@ -65,7 +64,7 @@ export default function LoginForm() {
 				<p className="text-xs text-gray-400 text-center md:pt-10 mx-3">
 					Don't have an account? Please contact your administrator.
 				</p>
-				
+
 			</div>
 			<a className="mt-4 opacity-75 transition-opacity hover:opacity-100 flex justify-center text-sm" href="https://iacademy.edu.ph" target="_blank" rel="noopener noreferrer">
 				<img className="mr-2 h-5" src="/images/iACADEMY_Seal.svg" alt="iACADEMY" />

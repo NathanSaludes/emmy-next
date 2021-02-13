@@ -4,7 +4,7 @@ import PageHeader from '@/components/PageHeader'
 import { HiCog } from 'react-icons/hi'
 
 const DashboardOptionsButton = () => (
-	<button className={`bg-dark-denim-accent text-white py-2 px-3 rounded-lg flex focus:outline-none focus:ring-2`}>
+	<button className={`bg-dark-denim-accent text-white px-3 flex items-center rounded-lg focus:outline-none focus:ring-2`}>
 		<HiCog className={`text-2xl text-main`} />
 	</button>
 )
