@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import MainLayout from '@/components/layouts/MainLayout'
 import PageHeader from '@/components/PageHeader'
-import UserListTabs from '@/components/UserList/UserListTabs'
+import AccountListTabs from '@/components/AccountListTabs/UserListTabs'
 import List from '@/components/List'
 import Badge from '@/components/Badge'
 import AccountActions from '@/components/AccountActions'
@@ -72,7 +72,7 @@ export default function UserAccounts() {
 					<AddUserButton />
 				</PageHeader>
 				<SearchUser />
-				<UserListTabs />
+				<AccountListTabs />
 				<List
 					data={getRowSchema(data)}
 					headers={headers}
