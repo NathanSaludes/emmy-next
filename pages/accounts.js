@@ -1,5 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
+import styles from '@/styles/custom.accounts/Accounts.module.scss'
+
 import MainLayout from '@/components/layouts/MainLayout'
 import PageHeader from '@/components/PageHeader'
 import AccountListTabs from '@/components/AccountListTabs/UserListTabs'
@@ -7,6 +9,7 @@ import List from '@/components/List'
 import Badge from '@/components/Badge'
 import AccountActions from '@/components/AccountActions'
 import ListControls from '@/components/ListControls'
+
 import { HiPlus, HiSearch } from 'react-icons/hi'
 import { useList } from '@/utils/useList'
 
@@ -73,14 +76,16 @@ export default function UserAccounts() {
 				</PageHeader>
 				<SearchUser />
 				<AccountListTabs />
-				<List
-					data={getRowSchema(data)}
-					headers={headers}
-					primaryColumn="name"
-					toggleSort={toggleSort}
-					sortedColumn={sortedColumn}
-					sortDirection={sortDirection}
-				/>
+				<div className={`${styles.listViewSection} flex flex-col overflow-x-hidden`}>
+					<List
+						data={getRowSchema(data)}
+						headers={headers}
+						primaryColumn="name"
+						toggleSort={toggleSort}
+						sortedColumn={sortedColumn}
+						sortDirection={sortDirection}
+					/>
+				</div>
 				<ListControls />
 			</MainLayout>
 		</>

@@ -1,0 +1,13 @@
+.listViewSection {
+	position: relative; // <-- do not remove (required for the fade to take effect on the containers)
+
+	// style for creating a fade effect
+	&::before {
+		content: "";
+		position: absolute;
+		right: 0;
+		width: 3rem;
+		height: 100%;
+		background-image: linear-gradient(to right, transparent, #121e38);
+	}
+}
