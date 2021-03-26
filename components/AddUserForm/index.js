@@ -10,7 +10,7 @@ function AddUserForm() {
 					<div className="font-semibold text-2xl tracking text-main">
 						Create New User
 					</div>
-					<button className="flex justify-center items-center h-9 w-9 bg-emmy-blue-accent bg-opacity-20 rounded-md group hover:bg-opacity-30 focus:outline-none focus:ring-2">
+					<button className="flex justify-center items-center h-9 w-9 bg-emmy-blue-accent bg-opacity-20 rounded-md group hover:bg-opacity-30 focus:outline-none focus:ring-2 shadow-sm">
 						<RiCloseLine className="text-2xl text-main group-hover:text-primary" />
 					</button>
 				</div>
