@@ -9,6 +9,8 @@ import List from '@/components/List'
 import Badge from '@/components/Badge'
 import AccountActions from '@/components/AccountActions'
 import ListControls from '@/components/ListControls'
+import Modal from '@/components/Modal'
+import AddUserForm from '@/components/AddUserForm'
 
 import { HiPlus, HiSearch } from 'react-icons/hi'
 import { useList } from '@/utils/useList'
@@ -87,6 +89,9 @@ export default function UserAccounts() {
 					/>
 				</div>
 				<ListControls />
+				<Modal>
+					<AddUserForm />
+				</Modal>
 			</MainLayout>
 		</>
 	)
