@@ -16,7 +16,7 @@ import { HiPlus, HiSearch } from 'react-icons/hi'
 import { useList } from '@/utils/useList'
 
 // DEBUG --------------------------------------------------------------------
-import users from '../users.json';
+import users from '../sample_data/users.json';
 const isAdmin = true;
 const userData = users?.map(item => ({
 	...item,
@@ -78,7 +78,7 @@ export default function UserAccounts() {
 				</PageHeader>
 				<SearchUser />
 				<AccountListTabs />
-				<div className={`${styles.listViewSection} flex flex-col overflow-x-hidden`}>
+				<div className={`${styles.listViewSection} flex flex-col overflow-x-hidden mt-8 mb-6`}>
 					<List
 						data={getRowSchema(data)}
 						headers={headers}
