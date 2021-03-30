@@ -1,5 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
+import styles from '@/styles/custom.accounts/Accounts.module.scss'
+
 import MainLayout from '@/components/layouts/MainLayout'
 import PageHeader from '@/components/PageHeader'
 import AccountListTabs from '@/components/AccountListTabs/UserListTabs'
@@ -7,11 +9,14 @@ import List from '@/components/List'
 import Badge from '@/components/Badge'
 import AccountActions from '@/components/AccountActions'
 import ListControls from '@/components/ListControls'
+import Modal from '@/components/Modal'
+import AddUserForm from '@/components/AddUserForm'
+
 import { HiPlus, HiSearch } from 'react-icons/hi'
 import { useList } from '@/utils/useList'
 
 // DEBUG --------------------------------------------------------------------
-import users from '../users.json';
+import users from '../sample_data/users.json';
 const isAdmin = true;
 const userData = users?.map(item => ({
 	...item,
@@ -73,15 +78,20 @@ export default function UserAccounts() {
 				</PageHeader>
 				<SearchUser />
 				<AccountListTabs />
-				<List
-					data={getRowSchema(data)}
-					headers={headers}
-					primaryColumn="name"
-					toggleSort={toggleSort}
-					sortedColumn={sortedColumn}
-					sortDirection={sortDirection}
-				/>
+				<div className={`${styles.listViewSection} flex flex-col overflow-x-hidden mt-8 mb-6`}>
+					<List
+						data={getRowSchema(data)}
+						headers={headers}
+						primaryColumn="name"
+						toggleSort={toggleSort}
+						sortedColumn={sortedColumn}
+						sortDirection={sortDirection}
+					/>
+				</div>
 				<ListControls />
+				<Modal>
+					<AddUserForm />
+				</Modal>
 			</MainLayout>
 		</>
 	)
