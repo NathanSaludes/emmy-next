@@ -1,0 +1,10 @@
+[
+	{
+		"_id": "6062aed778a05a16c4ec41c3",
+		"isServer": false,
+		"action": "LOGIN",
+		"description": "System Administrator logged in at 12:53:43 PM",
+		"user": "System Administrator",
+		"date": "2021-03-30T12:53:43.535+08:00"
+	}
+]
