@@ -24,7 +24,7 @@ export default function SystemLogs() {
 		{ text: 'Agent', name: 'agent', hidden: false, sortable: true },
 	]), [isAdmin])
 
-	const getRowSchema = (data) => {
+	const getData = (data) => {
 		return data?.map(log => ({
 			id: log._id,
 			date: new Date(log.date).toLocaleDateString("en-US", { year: 'numeric', month: 'long', day: 'numeric' }),
@@ -44,7 +44,7 @@ export default function SystemLogs() {
 				<PageHeader title="System Logs" />
 				<div className={`flex flex-col overflow-x-hidden bg-pink-500 bg-opacity-0`}>
 					<List
-						data={getRowSchema(data)}
+						data={getData(data)}
 						headers={headers}
 						primaryColumn="description"
 						toggleSort={toggleSort}
