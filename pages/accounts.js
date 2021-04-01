@@ -7,7 +7,7 @@ import PageHeader from '@/components/PageHeader'
 import AccountListTabs from '@/components/AccountListTabs/UserListTabs'
 import List from '@/components/List'
 import Badge from '@/components/Badge'
-import AccountActions from '@/components/AccountActions'
+import ListActions from '@/components/ListActions'
 import ListControls from '@/components/ListControls'
 import Modal from '@/components/Modal'
 import AddUserForm from '@/components/AddUserForm'
@@ -52,7 +52,7 @@ export default function UserAccounts() {
 			username: user.username,
 			email: user.email,
 			status: (<Badge label={user.isActive ? 'active' : 'disabled'} color={user.isActive ? 'bg-green-500' : 'bg-red-500'} />),
-			actions: (<AccountActions />)
+			actions: (<ListActions />)
 		}))
 	}
 
