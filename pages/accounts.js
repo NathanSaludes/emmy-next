@@ -11,6 +11,7 @@ import AccountActions from '@/components/AccountActions'
 import ListControls from '@/components/ListControls'
 import Modal from '@/components/Modal'
 import AddUserForm from '@/components/AddUserForm'
+import Search from '@/components/ListSearch'
 
 import { HiPlus, HiSearch } from 'react-icons/hi'
 import { useList } from '@/utils/useList'
@@ -27,20 +28,8 @@ const userData = users?.map(item => ({
 const AddUserButton = () => (
 	<button className={`text-white bg-emmy-blue text-md text-opacity-90 py-1 md:py-1.5 pr-6 pl-4 rounded-lg flex items-center focus:outline-none focus:ring-2 ring-offset-emmy-blue font-semibold`}>
 		<HiPlus className="text-white text-opacity-50 mr-1" />
-		Add User
+		Add New
 	</button>
-)
-
-const SearchUser = () => (
-	<div className="mb-5 my-8">
-		<div className="bg-dark-denim-accent rounded-md flex items-center relative">
-			<HiSearch className="absolute left-3 text-blue-100 text-opacity-30 text-lg" />
-			<input
-				type="text" name="search_user"
-				placeholder="Search"
-				className={`bg-transparent border-none pr-4 pl-10 py-1 rounded-lg text-white placeholder-blue-100 placeholder-opacity-30 w-full outline-none focus:ring-1`} />
-		</div>
-	</div>
 )
 
 export default function UserAccounts() {
@@ -76,7 +65,7 @@ export default function UserAccounts() {
 				<PageHeader title="User Accounts">
 					<AddUserButton />
 				</PageHeader>
-				<SearchUser />
+				<Search />
 				<AccountListTabs />
 				<div className={`${styles.listViewSection} flex flex-col overflow-x-hidden mt-8 mb-6`}>
 					<List
