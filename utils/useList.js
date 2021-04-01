@@ -3,6 +3,11 @@ import { useState, useCallback, useEffect } from 'react'
 const SORT_OPTIONS = ['NONE', 'ASC', 'DESC']
 const DEFAULT_SORT_DIR = SORT_OPTIONS[0];
 
+/**
+ * To implement useList hook, provide the following parameters:
+ * - data - can be any json data (i.e. array of user records)
+ * - indexField - the specific field used to uniquely identify each record
+ */
 export function useList(_data, indexFieldName) {
 	const [data, setData] = useState(_data || []);
 	const [sortedColumn, setSortedColumn] = useState(indexFieldName || '');
