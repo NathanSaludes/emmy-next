@@ -1,0 +1,23 @@
+$scrollbar_color: rgba(45, 63, 97);
+$thumb_color: rgb(22, 37, 65);
+
+.scroll {
+	&::-webkit-scrollbar {
+		width: 0.5rem;
+		background-color: $scrollbar_color;
+	}
+
+	/* Track */
+	&::-webkit-scrollbar-track {
+	}
+
+	/* Handle */
+	&::-webkit-scrollbar-thumb {
+		background-color: $thumb_color;
+		border: transparent;
+	}
+
+	/* Handle on hover */
+	&::-webkit-scrollbar-thumb:hover {
+	}
+}
