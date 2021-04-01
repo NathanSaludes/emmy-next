@@ -1,0 +1,42 @@
+[
+	{
+		"_id": "6062aed778a05a16c4ec41c3",
+		"isServer": false,
+		"action": "LOGIN",
+		"description": "System Administrator logged in at 12:53:43 PM",
+		"user": "System Administrator",
+		"date": "2021-03-30T12:53:43.535+08:00"
+	},
+	{
+		"_id": "cb304562-70cd-4e70-9bfd-08e03118953b",
+		"isServer": false,
+		"action": "LOGIN",
+		"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+		"user": "Sample User",
+		"date": "2021-03-30T12:53:43.535+08:00"
+	},
+	{
+		"_id": "2e3f4d2a-6f23-4502-a920-5c1e787d420a",
+		"isServer": false,
+		"action": "LOGIN",
+		"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+		"user": "Sample User",
+		"date": "2021-03-30T12:53:43.535+08:00"
+	},
+	{
+		"_id": "700c2461-4deb-459f-a4cb-3b38ec903591",
+		"isServer": false,
+		"action": "LOGIN",
+		"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+		"user": "Sample User",
+		"date": "2021-03-30T12:53:43.535+08:00"
+	},
+	{
+		"_id": "da1b5c7c-80a5-4616-9d4f-30ea99226d7d",
+		"isServer": false,
+		"action": "LOGIN",
+		"description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+		"user": "Sample User",
+		"date": "2021-03-30T12:53:43.535+08:00"
+	}
+]

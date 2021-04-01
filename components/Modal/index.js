@@ -4,7 +4,7 @@ import ReactDom from 'react-dom'
 function Modal({ children }) {
 
 	const [isBrowser, setIsBrowser] = useState(false)
-	const [isOpen, setIsOpen] = useState(true)
+	const [isOpen, setIsOpen] = useState(false)
 
 	useEffect(() => {
 		setIsBrowser(true)
