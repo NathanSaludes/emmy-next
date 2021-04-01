@@ -13,7 +13,7 @@ const EditButton = () => (
 	</button>
 )
 
-export default function AccountActions({ id }) {
+export default function ListActions({ id }) {
 	return (
 		<div className="flex">
 			<RemoveButton />
