@@ -16,7 +16,7 @@ function AddUserForm() {
 					<RiCloseLine className="text-2xl text-main group-hover:text-primary" />
 				</button>
 			</div>
-			<div className={`${styles.scroll} input-group flex flex-col w-full max-h-96 overflow-y-auto overflow-x-hidden pl-8 pr-6 mr-3`}>
+			<div className={`${styles.scroll} input-group flex flex-col w-full max-h-96 overflow-y-auto overflow-x-hidden pl-10 pr-4 mr-8`}>
 				<InputField label="First name" type="text" name="" placeholder="" />
 				<InputField label="Last name" type="text" name="" placeholder="" />
 				<InputField label="Email" type="text" name="" placeholder="" />
